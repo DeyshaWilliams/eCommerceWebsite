@@ -9,4 +9,27 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, header {
+    background-color: #FFFFFF;
+}
+
+body {
+    text-align: left;
+}
+
+header {
+    text-align: left;
+}
+
+footer {
+    background-color: #bf7631;
+    text-align: center;
+    padding: 2.3rem;
+}
+
+footer img{
+    width: 55px;
 }
