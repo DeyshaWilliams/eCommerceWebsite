@@ -12,15 +12,92 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+img[src*="./assets/icons8-pottery-96.png"] {
+    width: 30px;
+}
+
+img[src*="./assets/1200px-Google_Magnifying_Glass.svg.png"], img[src*="./assets/icons8-pottery-96 (1).png"] {
+    width: 20px;
+}
+
+.parentContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding: 2.3rem;
+    background-color: black;
+}
+
+img[src*="./assets/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg"]{
+    width: 100%;
+}
+
+.top-left {
+    position: absolute;
+    top: 10px;
+    left: 75px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 10px;
+    right: 75px;
+}
+
+
+
+img[src="./assets/Cylinder_unglazed3_2048x2048.jpg"]{
+    float: right;
+    width: 445px;
+    transform: scaleX(-1);
+    padding: 2.3rem;
+}
+
+img[src*="./assets/Vase_Dame_2048x2048.jpg"]{
+    float: left;
+    width: 30%;
+    padding: 2.3rem;
+}
+
+.grid-container img {
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    border: .5px solid black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 175px);
+    grid-auto-rows: 300px;
+    grid-gap: 60px;
+    justify-content: center;
+}
+
 body, header {
     background-color: #FFFFFF;
 }
 
-body {
-    text-align: left;
+header {
+    text-align: center;
+    padding: 2.3rem;
 }
 
-header {
+.grid-container h4, h5, a {
+    display: inline;
+}
+
+.grid-container h4, h5 {
+    padding: 1.429rem;
+}
+
+.grid-container a {
+    padding: 1.26rem;
+}
+
+body {
     text-align: left;
 }
 
