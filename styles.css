@@ -12,9 +12,34 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+header {
+    height: 5px;
+    position: relative;
+}
+
+.left {
+    float: left;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
 
 img[src*="./assets/icons8-pottery-96.png"] {
     width: 30px;
+}
+
+.right {
+    right: 2%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 img[src*="./assets/1200px-Google_Magnifying_Glass.svg.png"], img[src*="./assets/icons8-pottery-96 (1).png"] {
@@ -23,10 +48,10 @@ img[src*="./assets/1200px-Google_Magnifying_Glass.svg.png"], img[src*="./assets/
 
 .parentContainer {
     position: relative;
-    text-align: center;
     color: white;
     font-size: 30px;
-    padding: 2.3rem;
+    padding-right: 2.3rem;
+    padding-left: 2.3rem;
     background-color: black;
 }
 
@@ -38,27 +63,53 @@ img[src*="./assets/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg"]{
     position: absolute;
     top: 10px;
     left: 75px;
+    width: 8em;
 }
 
 .bottom-right {
     position: absolute;
     bottom: 10px;
     right: 75px;
+    width: 8em;
+    text-align: right;
 }
 
+.aboutContainer {
+    padding: 5rem;
+}
 
+.aboutContainer p {
+    padding: 10px;
+}
+
+.aboutChild1, .aboutChild2 {
+    float: left;
+    width: 60%;
+}
+
+.aboutChild2 {
+    padding-top: 10px;
+}
 
 img[src="./assets/Cylinder_unglazed3_2048x2048.jpg"]{
     float: right;
-    width: 445px;
+    width: 30%;
     transform: scaleX(-1);
-    padding: 2.3rem;
+    position: absolute;
 }
 
 img[src*="./assets/Vase_Dame_2048x2048.jpg"]{
     float: left;
-    width: 30%;
-    padding: 2.3rem;
+    width: 50%;
+    padding-right: 5rem;
+}
+
+.productsContainer {
+    margin-top: 350px;
+}
+
+.productsContainer h2 {
+    padding: 5rem;
 }
 
 .grid-container img {
@@ -101,10 +152,25 @@ body {
     text-align: left;
 }
 
+.contactContainer {
+    padding: 5rem;
+    
+}
+
+.emailContainer {
+    padding: 23px;
+}
+
+.submitButton {
+    float: right;
+}
+
 footer {
     background-color: #bf7631;
     text-align: center;
     padding: 2.3rem;
+    position: absolute;
+    width: 100%;
 }
 
 footer img{
